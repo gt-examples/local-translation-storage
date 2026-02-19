@@ -1,0 +1,214 @@
+{
+  "2ecc18c9bbac0870": "Almacenamiento local de traducciones",
+  "2ee850830f843661": [
+    {
+      "c": "Traducciones con control de versiones",
+      "i": 1,
+      "t": "h4"
+    },
+    {
+      "c": "Los archivos de traducción se almacenan en tu repositorio. Puedes revisar los cambios en pull requests y revertirlos si es necesario.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "3b7af3d7072f2907": {
+    "c": [
+      {
+        "c": "01",
+        "i": 2,
+        "t": "span"
+      },
+      {
+        "c": [
+          {
+            "c": "Generar archivos de traducción",
+            "i": 4,
+            "t": "h4"
+          },
+          {
+            "c": [
+              "Ejecuta ",
+              {
+                "c": "npx gtx-cli translate",
+                "i": 6,
+                "t": "code"
+              },
+              " para extraer todas las cadenas traducibles y generar archivos JSON para cada idioma. Estos archivos se almacenan en tu repositorio."
+            ],
+            "i": 5,
+            "t": "p"
+          }
+        ],
+        "i": 3,
+        "t": "div"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
+  "51bb708bd32b790a": [
+    {
+      "c": "Despliegue simple",
+      "i": 1,
+      "t": "h4"
+    },
+    {
+      "c": "Despliega como cualquier otro sitio estático. No se requieren variables de entorno ni claves de API en tiempo de ejecución para que las traducciones funcionen.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "64ce2496db041c88": {
+    "c": [
+      "Desarrollado con ",
+      {
+        "c": "General Translation",
+        "i": 2,
+        "t": "a"
+      },
+      " y Next.js. Consulta la ",
+      {
+        "c": "documentación",
+        "i": 3,
+        "t": "a"
+      },
+      " para más información."
+    ],
+    "i": 1,
+    "t": "p"
+  },
+  "7a48d926859c94b3": [
+    {
+      "c": "Sin dependencias externas",
+      "i": 1,
+      "t": "h4"
+    },
+    {
+      "c": "Tu aplicación no depende de una CDN ni de un servicio de traducción disponible en tiempo de ejecución. Funciona completamente sin conexión.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "7e5813d2be02d306": "Almacenamiento local de traducciones | Traducción genérica",
+  "835c82d2c8be8aab": {
+    "c": [
+      {
+        "c": "02",
+        "i": 2,
+        "t": "span"
+      },
+      {
+        "c": [
+          {
+            "c": "Confirma las traducciones en tu repositorio",
+            "i": 4,
+            "t": "h4"
+          },
+          {
+            "c": "Los archivos JSON generados se registran en el control de versiones junto con tu código fuente. Son recursos estáticos, como imágenes o fuentes.",
+            "i": 5,
+            "t": "p"
+          }
+        ],
+        "i": 3,
+        "t": "div"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
+  "8c794b2df51d2935": {
+    "c": "¿Por qué agrupar las traducciones localmente?",
+    "i": 1,
+    "t": "h3"
+  },
+  "8cdf08c26c7e04c2": {
+    "c": "Configuración",
+    "i": 1,
+    "t": "h3"
+  },
+  "a12715052914ab49": {
+    "c": "Cómo funciona",
+    "i": 1,
+    "t": "h3"
+  },
+  "a7ac095b13bce498": {
+    "c": "loadTranslations.ts — importar JSON en tiempo de compilación",
+    "i": 1,
+    "t": "span"
+  },
+  "a8ebad0d50cb325f": [
+    {
+      "c": "Cero latencia en tiempo de ejecución",
+      "i": 1,
+      "t": "h4"
+    },
+    {
+      "c": "Las traducciones ya están incluidas en el bundle. Sin solicitudes de red, sin estado de carga, sin destellos de contenido sin traducir.",
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "ce4ce036232dd9eb": {
+    "c": [
+      {
+        "c": "03",
+        "i": 2,
+        "t": "span"
+      },
+      {
+        "c": [
+          {
+            "c": "Carga en tiempo de compilación",
+            "i": 4,
+            "t": "h4"
+          },
+          {
+            "c": [
+              "La función ",
+              {
+                "c": "loadTranslations",
+                "i": 6,
+                "t": "code"
+              },
+              " importa el archivo JSON correspondiente a cada locale. Las traducciones se resuelven durante la compilación, por lo que no hay ninguna solicitud en tiempo de ejecución."
+            ],
+            "i": 5,
+            "t": "p"
+          }
+        ],
+        "i": 3,
+        "t": "div"
+      }
+    ],
+    "i": 1,
+    "t": "div"
+  },
+  "f2fadb66d7374321": {
+    "c": "gt.config.json — apuntar a archivos de traducción locales",
+    "i": 1,
+    "t": "span"
+  },
+  "fc80b98d79d5d053": [
+    {
+      "c": "Incluye las traducciones en tu compilación",
+      "i": 1,
+      "t": "h2"
+    },
+    {
+      "c": [
+        "Esta aplicación distribuye sus traducciones como archivos JSON estáticos en lugar de obtenerlas desde una CDN en tiempo de ejecución. El patrón ",
+        {
+          "c": "loadTranslations",
+          "i": 3,
+          "t": "code"
+        },
+        " te permite importar los datos de traducción en tiempo de compilación, lo que permite cambiar de idioma con latencia cero y sin dependencias externas."
+      ],
+      "i": 2,
+      "t": "p"
+    }
+  ],
+  "ff20cd3a8dad0f29": "Incluye las traducciones como parte de tu build con el patrón loadTranslations. No necesitas un CDN."
+}
