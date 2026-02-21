@@ -1,4 +1,5 @@
 {
+  "0c730b7f189776b6": "Ver en GitHub",
   "2ecc18c9bbac0870": "Almacenamiento local de traducciones",
   "2ee850830f843661": [
     {
@@ -59,25 +60,15 @@
       "t": "p"
     }
   ],
-  "64ce2496db041c88": {
-    "c": [
-      "Desarrollado con ",
-      {
-        "c": "General Translation",
-        "i": 2,
-        "t": "a"
-      },
-      " y Next.js. Consulta la ",
-      {
-        "c": "documentación",
-        "i": 3,
-        "t": "a"
-      },
-      " para más información."
-    ],
-    "i": 1,
-    "t": "p"
-  },
+  "64d17a4e6783f6a9": [
+    "Esta es una aplicación de ejemplo creada con ",
+    {
+      "c": "General Translation",
+      "i": 1,
+      "t": "a"
+    },
+    ". No es un producto real."
+  ],
   "7a48d926859c94b3": [
     {
       "c": "Sin dependencias externas",
@@ -106,7 +97,7 @@
             "t": "h4"
           },
           {
-            "c": "Los archivos JSON generados se registran en el control de versiones junto con tu código fuente. Son recursos estáticos, como imágenes o fuentes.",
+            "c": "Los archivos JSON generados se integran al control de versiones junto con tu código fuente. Son recursos estáticos, como imágenes o fuentes.",
             "i": 5,
             "t": "p"
           }
@@ -150,6 +141,43 @@
       "t": "p"
     }
   ],
+  "c3c54d771d92bfea": {
+    "c": [
+      "Desarrollado con ",
+      {
+        "c": "General Translation",
+        "i": 2,
+        "t": "a"
+      },
+      ", ",
+      {
+        "c": "Next.js",
+        "i": 3,
+        "t": "a"
+      },
+      " y ",
+      {
+        "c": "Tailwind CSS",
+        "i": 4,
+        "t": "a"
+      },
+      ". Consulta la ",
+      {
+        "c": "documentación",
+        "i": 5,
+        "t": "a"
+      },
+      " para aprender más sobre ",
+      {
+        "c": "SEO multilingüe",
+        "i": 6,
+        "t": "a"
+      },
+      "."
+    ],
+    "i": 1,
+    "t": "p"
+  },
   "ce4ce036232dd9eb": {
     "c": [
       {
@@ -172,7 +200,7 @@
                 "i": 6,
                 "t": "code"
               },
-              " importa el archivo JSON correspondiente a cada locale. Las traducciones se resuelven durante la compilación, por lo que no hay ninguna solicitud en tiempo de ejecución."
+              " importa el archivo JSON correspondiente a cada configuración regional. Las traducciones se resuelven durante la compilación, por lo que no hay ninguna solicitud en tiempo de ejecución."
             ],
             "i": 5,
             "t": "p"
@@ -198,7 +226,7 @@
     },
     {
       "c": [
-        "Esta aplicación distribuye sus traducciones como archivos JSON estáticos en lugar de obtenerlas desde una CDN en tiempo de ejecución. El patrón ",
+        "Esta aplicación distribuye sus traducciones como archivos JSON estáticos en lugar de obtenerlos desde una CDN en tiempo de ejecución. El patrón ",
         {
           "c": "loadTranslations",
           "i": 3,
@@ -210,5 +238,5 @@
       "t": "p"
     }
   ],
-  "ff20cd3a8dad0f29": "Incluye las traducciones como parte de tu build con el patrón loadTranslations. No necesitas un CDN."
+  "ff20cd3a8dad0f29": "Incluye las traducciones como parte de tu build con el patrón loadTranslations. No necesitas CDN."
 }

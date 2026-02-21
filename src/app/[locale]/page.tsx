@@ -7,6 +7,20 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-neutral-950 font-sans text-neutral-200">
+      <div className="bg-indigo-600 text-white text-center py-2 px-4 text-sm">
+        <T>
+          This is an example app built with{" "}
+          <a
+            href="https://generaltranslation.com"
+            className="underline font-medium"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            General Translation
+          </a>
+          . It is not a real product.
+        </T>
+      </div>
       <header className="border-b border-neutral-800 bg-neutral-950">
         <div className="max-w-3xl mx-auto px-6 py-5 flex items-center justify-between">
           <div className="flex items-center gap-3">
@@ -29,7 +43,7 @@ export default async function Home() {
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-400 hover:text-neutral-200 transition-colors"
-              aria-label="View on GitHub"
+              aria-label={gt("View on GitHub")}
             >
               <svg
                 width="20"
@@ -250,8 +264,26 @@ export default async function Home() {
                 className="text-neutral-400 hover:text-neutral-200 transition-colors underline underline-offset-2"
               >
                 General Translation
-              </a>{" "}
-              and Next.js. View the{" "}
+              </a>
+              ,{" "}
+              <a
+                href="https://nextjs.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-400 hover:text-neutral-200 transition-colors underline underline-offset-2"
+              >
+                Next.js
+              </a>
+              , and{" "}
+              <a
+                href="https://tailwindcss.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-400 hover:text-neutral-200 transition-colors underline underline-offset-2"
+              >
+                Tailwind CSS
+              </a>
+              . View the{" "}
               <a
                 href="https://generaltranslation.com/en-US/docs"
                 target="_blank"
@@ -260,7 +292,16 @@ export default async function Home() {
               >
                 documentation
               </a>{" "}
-              to learn more.
+              to learn more about{" "}
+              <a
+                href="https://generaltranslation.com/en-US/blog/multilingual-nextjs-seo"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-neutral-400 hover:text-neutral-200 transition-colors underline underline-offset-2"
+              >
+                multilingual SEO
+              </a>
+              .
             </p>
           </T>
         </footer>
